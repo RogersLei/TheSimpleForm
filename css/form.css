@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0
+}
+body{
+	background:#FFF;
+	color:#111;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	padding:20px;
+}
+#payment{
+	background:#9cbc2c;
+	border-radius:5px;
+	padding:30px;
+	width:400px;
+}
+fieldset{
+	border:none;
+	margin-bottom:10px;
+}
+fieldset legend{
+	color:#384313;
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:10px;
+	text-shadow:0 5px 5px #c0d576;
+}
+fieldset fieldset legend{
+	color:#111;
+	font-size:16px;
+	font-weight:normal;
+	padding-bottom:0;
+}
+ol li {
+	background:#b9cf6a;
+	border-color:#e3ebc3;
+	border-style:dotted;
+	border-width:2px;
+	border-radius:10px;
+	list-style:none;
+	padding:5px 10px;
+	line-height:30px;
+	margin-bottom:2px;
+}
+ol ol li{
+	background:none;
+	border:none;
+	float:left;
+}
+label{
+	float:left;
+	font-size:16px;
+	font-family:"Courier New", Courier, monospace;
+	width:130px;
+}
+fieldset fieldset label{
+	background:none no-repeat left 50%;
+	line-height:20px;
+	padding: 0 0 0 30px;
+	width:auto;	
+}
+fieldset fieldset label:hover{cursor:pointer;}
+//有关属性选择器
+form#payment input:not([type=radio]),textarea{
+	background:#ffffff;
+	border:#f3c solid 1px;
+	border-radius:5px;
+	font:italic 13px Georgia, "Times New Roman", Times, serif;
+	outline:none;
+	padding:5px;
+	width:200px;
+}
+form#payment input:not([type=submit]):focus,textarea:focus{
+	background:#eaeaea;
+	border:#F00 solid 1px;
+}
+form#payment input[type=radio]{
+	float:left;
+	margin-right:5px;
+}
+form#payment>fieldset>legend:before{
+	content:"Step" counter(fieldset)":";
+	counter-increment:fiedsets;
+}
